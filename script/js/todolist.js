@@ -23,7 +23,8 @@ mioForm.addEventListener("submit", function (e) {
 });
 const sbarraTask = function (e) {
   const li = document.getElementById("linea");
-  li.classList.add("linea");
+
+  li.classList.toggle("linea");
 };
 const eliminaTask = function (e) {
   e.target.parentElement.remove();
